@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Javascript Midterm</title>
+</head>
+<body>
+    <canvas class="threejs"></canvas>
+
+    <div class="container">
+        <!-- <a href="" style="z-index: 10;">test link</a> -->
+        <button class="btn1"></button>
+        <button class="btn3"></button>
+        <button class="btn2"></button>
+        <button class="btn4"></button>
+        <button class="btn5"></button>
+        <div class="dropDown">
+            <label for="bookName" class="label">Choose a book:</label>
+                <select id="bookName" name="books" class="input1">
+                    <option value="1">Life 3.0</option>
+                    <option value="2">Bad Blood</option>
+                    <option value="3">The Power Broker</option>
+                    <option value="4">The Fourth Transformation</option>
+                    <option value="5">Siddhartha</option>
+                </select>
+            <input type="submit" class="submitButton">
+        </div>
+
+
+        <div  class="bookPrompt">
+            <form >
+                <label for="newbookName">Book Title:</label><br>
+                <input type="text" id="newbookName" name="newbookName" value=""><br>
+                <label for="bookAuthor">Author:</label><br>
+                <input type="text" id="bookAuthor" name="bookAuthor" value=""><br><br>
+                <label for="bookCover">Book Cover:</label>
+                <input type="file" id="bookCover" name="bookCover">
+                <label for="bookBack">Book Back:</label>
+                <input type="file" id="bookBack" name="bookCover">
+                <label for="bookSpine">Book Spine:</label>
+                <input type="file" id="bookSpine" name="bookCover">
+
+                <label for="temporaryBookCover">Book Cover link:</label>
+                <input type="text" id="temporaryBookCover" name="temporaryBookCover">
+
+                
+                
+
+              </form> 
+              <input type="submit" class="submitButton2">
+        </div>
+    </div>
+
+    <div class="notes">
+        <h1 class=".bookTitle" contenteditable="true"></h1>
+        <h3 class=".bookAuthor" contenteditable="true"></h3>
+        <form name="compForm" method="post">
+            <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+            </select>
+            <input type="file" accept="image/*" name="image" id="file"style="display: none;"/>
+            <label for="file" style="cursor: pointer;">Add Image</label>
+            <div id="textBox" contenteditable="true">
+                
+            </div>
+        </form>
+
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript">
+
+
+
+    </script> -->
+</body>
+</html>
